@@ -123,7 +123,7 @@ Console.WriteLine(pos);
 
 Console.Clear();
 
-int find = 15;
+int find = 33;
 
 void FillArray(int[] array)
 {
@@ -131,7 +131,7 @@ void FillArray(int[] array)
     int index = 0;
     while (index < size)
     {
-        array[index] = new Random().Next(1, 21);
+        array[index] = new Random().Next(1, 100);
         index++;
     }
 }
@@ -164,7 +164,7 @@ int IndexFind(int[] array, int find)
     }
     return position;
 }
-int[] array = new int[10];
+int[] array = new int[15];
 
 FillArray(array);
 PrintArray(array);
