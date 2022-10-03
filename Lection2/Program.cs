@@ -69,6 +69,7 @@ while (index < n)
     index++;
 }
 */
+/*
 Console.Clear();
 
 void FillArray(int[] collection)
@@ -77,7 +78,7 @@ void FillArray(int[] collection)
     int index = 0;
     while (index < length)
     {
-        collection[index] = new Random().Next(1, 10);
+        collection[index] = new Random().Next(1, 20);
         index++;
     }
 }
@@ -88,7 +89,7 @@ void PrintArray(int[] coll)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine(coll[position]);
+        Console.Write(" " + coll[position]);
         position++;
     }
 }
@@ -110,7 +111,7 @@ int IndexOf(int[] collection, int find)
     }
     return position;
 }
-int[] array = new int[10];
+int[] array = new int[15];
 
 FillArray(array);
 PrintArray(array);
@@ -118,4 +119,58 @@ Console.WriteLine();
 
 int pos = IndexOf(array, 4);
 Console.WriteLine(pos);
+*/
 
+Console.Clear();
+
+int find = 15;
+
+void FillArray(int[] array)
+{
+    int size = array.Length;
+    int index = 0;
+    while (index < size)
+    {
+        array[index] = new Random().Next(1, 21);
+        index++;
+    }
+}
+
+void PrintArray(int[] array)
+{
+    int size = array.Length;
+    int index = 0;
+    while (index < size)
+    {
+        Console.Write(" " + array[index]);
+        index++;
+    }
+}
+
+int IndexFind(int[] array, int find)
+{
+    int size = array.Length;
+    int index = 0;
+    int position = -1;
+
+    while (index < size)
+    {
+        if (array[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+int[] array = new int[10];
+
+FillArray(array);
+PrintArray(array);
+Console.WriteLine();
+
+int result = IndexFind(array,find);
+Console.WriteLine(result);
+
+Console.ReadLine();
