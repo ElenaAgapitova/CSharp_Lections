@@ -17,7 +17,7 @@ Console.WriteLine(a.GetType().Name);
 var b = 12;
 Console.WriteLine(b.GetType().Name);
 
-var data = new int[] { 1, 2, 3, 4 }
+/*var data = new int[] { 1, 2, 3, 4 }
             .Where(e => 0)
             .Select(e => new { q = e, w = e + 1 });
-Console.WriteLine(data.GetType()); // выдаст непонятно что
+Console.WriteLine(data.GetType()); // выдаст непонятно что*/

@@ -40,7 +40,7 @@ Console.WriteLine();
 FillArray(matrix);
 PrintArray(matrix);
 */
-/*
+
 int[,] pic = new int[,]
 {
     {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -74,7 +74,7 @@ void PrintImage(int[,] image)
     {
         for(int j = 0; j < image.GetLength(1); j++)
         {
-            if(image[i,j] == 00) Console.Write($" ");
+            if(image[i,j] == 0) Console.Write($" ");
             else Console.Write("+");
         }
         Console.WriteLine();
@@ -82,6 +82,7 @@ void PrintImage(int[,] image)
 }
 
 PrintImage(pic);
+
 
 void FillImage(int row, int col)
 {
@@ -97,7 +98,7 @@ void FillImage(int row, int col)
 
 FillImage(13,13);
 PrintImage(pic);
-*/
+
 /*
 double Factorial(int n) // double - вмещает в себя большее количество чисел, в int расчет фактоиала закончится 17!
 {
@@ -114,7 +115,7 @@ Console.WriteLine(Factorial(40)); // 8,159152832478977E+47 (это число * 
 // f(1) = 1
 // f(2) = 1
 // f(n) = f(n-1)+f(n-2)
-
+/*
 double Fibonacci(int n)
 {
     if(n == 1 || n == 2) return 1;
@@ -125,3 +126,4 @@ for(int i = 1; i < 40; i++)
 {
     Console.WriteLine($"{i} = {Fibonacci(i)}");
 }
+*/
