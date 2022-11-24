@@ -1,1 +1,1 @@
-![котик](njashnye-kotiki8.jpg)
+![котик](cool.jpg)
